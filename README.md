@@ -2,6 +2,8 @@
 # MooVees
 This is my version of the Movie Trailer Website project. The website displays my list of favorite movies.
 
+The `src` folder contains Python code and resources that get generated into a website.
+
 
 ## Demo
 Here is a working live demo :  ...
@@ -12,6 +14,7 @@ Here is a working live demo :  ...
 0. Clone or download this project
 0. Navigate to the project directory
 0. `python moovees.py`
+0. If website does not open automatically, look for the compiled `fresh_tomatoes.html` file in the project directory.
 
 
 ## References
