@@ -1,16 +1,38 @@
+html {
+    background-color: black;
+}
 body {
-    padding-top: 80px;
+    padding-top: 49px;
 }
 #trailer .modal-dialog {
     margin-top: 200px;
-    width: 640px;
-    height: 480px;
+    max-width: 640px;
+    max-height: 480px;
 }
-.hanging-close {
-    position: absolute;
-    top: -12px;
-    right: -12px;
-    z-index: 9001;
+#trailer .modal-dialog h1, p {
+    margin: 20px;
+}
+button.close {
+    padding-right: 15px;
+    padding-top: 10px;
+}
+#intro {
+    min-height: 500px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top;
+    background-image: linear-gradient( rgba(0, 0, 0, .5), rgba(0, 0, 0, .5) ), url(https://images.vice.com/motherboard/content-images/article/no-id/1443710960248436.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#intro h1 {
+    margin-top: 40px;
+    margin-right: 10%;
+}
+#intro h1 a {
+    color: black;
 }
 #trailer-video {
     width: 100%;
@@ -18,11 +40,24 @@ body {
 }
 .movie-tile {
     margin-bottom: 20px;
-    padding-top: 20px;
+    padding: 10px;
 }
 .movie-tile:hover {
-    background-color: #EEE;
+    background-color: black;
     cursor: pointer;
+}
+.movie-tile img {
+    border: 0.5px solid red;
+}
+#movie-list {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-image: linear-gradient( rgba(0, 0, 0, .5), rgba(0, 0, 0, .5) ), url('https://taylorholmes.com/wp-content/uploads/2010/07/inception-explained.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 .scale-media {
     padding-bottom: 56.25%;

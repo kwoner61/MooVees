@@ -21,3 +21,4 @@ Here is a working live demo :  ...
 
 - [Reading in file to string](https://stackoverflow.com/questions/8369219/how-do-i-read-a-text-file-into-a-string-variable-in-python)
 - [Relative location in Python](https://stackoverflow.com/questions/7165749/open-file-in-a-relative-location-in-python)
+- Movie poster image and storyline from [IMDb](http://www.imdb.com)

@@ -19,6 +19,10 @@ main_page_content = file_to_string(main_page_file)
 movie_tile_file = os.path.join(current_dir + '/partials/movie_content.html')
 movie_tile_content = file_to_string(movie_tile_file)
 
+# A modal for viewing movie title, storyline and trailer
+movie_modal_file = os.path.join(current_dir + '/partials/movie_modal.html')
+movie_modal_content = file_to_string(movie_modal_file)
+
 
 def create_movie_tiles_content(movies):
     # The HTML content for this section of the page
@@ -34,9 +38,10 @@ def create_movie_tiles_content(movies):
 
         # Append the tile for the movie with its content filled in
         content += movie_tile_content.format(
-            movie_title=movie.title,
-            poster_image_url=movie.poster_image_url,
-            trailer_youtube_id=trailer_youtube_id
+            movie_title = movie.title,
+            poster_image_url = movie.poster_image_url,
+            trailer_youtube_id = trailer_youtube_id,
+            movie_storyline = movie.storyline
         )
     return content
 
@@ -47,7 +52,8 @@ def open_movies_page(movies):
 
     # Replace the movie tiles placeholder generated content
     rendered_content = main_page_content.format(
-        movie_tiles=create_movie_tiles_content(movies))
+        movie_tiles = create_movie_tiles_content(movies),
+        movie_modal = movie_modal_content)
 
     # Output the file
     output_file.write(rendered_content)
