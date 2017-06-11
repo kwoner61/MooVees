@@ -1,6 +1,7 @@
 import webbrowser
 import os
 import re
+from src import movie_quotes
 
 
 def file_to_string(file_path): # Read in entire file content as string
@@ -22,6 +23,22 @@ movie_tile_content = file_to_string(movie_tile_file)
 # A modal for viewing movie title, storyline and trailer
 movie_modal_file = os.path.join(current_dir + '/partials/movie_modal.html')
 movie_modal_content = file_to_string(movie_modal_file)
+
+# List of random movie quotes
+movie_quote_container_file = os.path.join(current_dir + 
+    '/partials/movie_quote_container.html')
+movie_quote_container_content = file_to_string(movie_quote_container_file)
+
+
+def create_movie_quote_content():
+    quotes = movie_quotes.get_random_quotes()
+    content = ''
+    for quote in quotes:
+        content += movie_quote_container_content.format(
+            movie_title = quote['author'],
+            movie_quote_content = quote['quote']
+        )
+    return content
 
 
 def create_movie_tiles_content(movies):
@@ -53,7 +70,8 @@ def open_movies_page(movies):
     # Replace the movie tiles placeholder generated content
     rendered_content = main_page_content.format(
         movie_tiles = create_movie_tiles_content(movies),
-        movie_modal = movie_modal_content)
+        movie_modal = movie_modal_content,
+        movie_quotes = create_movie_quote_content())
 
     # Output the file
     output_file.write(rendered_content)

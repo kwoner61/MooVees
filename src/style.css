@@ -17,18 +17,19 @@ button.close {
     padding-top: 10px;
 }
 #intro {
-    min-height: 500px;
+    height: 70vh;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center top;
-    background-image: linear-gradient( rgba(0, 0, 0, .5), rgba(0, 0, 0, .5) ), url(https://images.vice.com/motherboard/content-images/article/no-id/1443710960248436.jpg);
+    background-image: linear-gradient( rgba(0, 0, 0, .15), rgba(0, 0, 0, .5) ), url(https://images.vice.com/motherboard/content-images/article/no-id/1443710960248436.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    border-bottom: 15px solid black;
 }
 #intro h1 {
-    margin-top: 40px;
+    margin-top: 50px;
     margin-right: 10%;
 }
 #intro h1 a {
@@ -50,6 +51,8 @@ button.close {
     border: 0.5px solid red;
 }
 #movie-list {
+    padding-top: 80px;
+    padding-bottom: 80px;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
@@ -58,6 +61,37 @@ button.close {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    border-bottom: 10px solid black;
+}
+.container .jumbotron {
+    border-radius: 0px;
+}
+.jumbotron {
+    background: none;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    padding: 40px;
+    padding-left: 50px;
+}
+#movie-quote-list {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-image: linear-gradient( rgba(0, 0, 0, .5), rgba(0, 0, 0, .5) ), url('http://hdwallpaperbackgrounds.net/wp-content/uploads/2015/11/Wall-E-In-Space-HD-Wallpaper.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.movie-quote {
+    color: white;
+    background-color: rgba(0, 0, 0, .5);
+    margin: 5px 5px;
+}
+.movie-quote h3, p {
+    padding: 10px;
+    margin: 0;
 }
 .scale-media {
     padding-bottom: 56.25%;
