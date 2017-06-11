@@ -1,4 +1,3 @@
-# ![MooVees](http://via.placeholder.com/850x150)
 # MooVees
 This is my version of the Movie Trailer Website project. The website displays my list of favorite movies.
 
@@ -6,7 +5,7 @@ The `src` folder contains Python code and resources that get generated into a we
 
 
 ## Demo
-Here is a working live demo :  ...
+Here is a working live demo :  https://kwoner61.github.io/MooVees/index.html
 
 
 ## How to build the website
