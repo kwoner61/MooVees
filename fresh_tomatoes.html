@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <title>My Favorite Sci-Fi Movies</title>
+
+      <!-- Bootstrap 3 -->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+      <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+      <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+      
+      <link rel="stylesheet" type="text/css" href="src/style.css" media="screen">
+      <script src="src/script.js"></script>
+  </head>
+
+  <body>
+    <!-- Trailer Video Modal -->
+    <div class="container">
+      <div class="modal" id="trailer" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h1 id="movie-title">Title missing...</h1>
+      <p id="movie-storyline">Storyline missing...</p>
+      <div class="scale-media" id="trailer-video-container">
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+
+    <!-- Main Page Content -->
+    <div class="container">
+      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Jungho's Favorite Sci-Fi Movies</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#movie-list">Movie Trailers</a></li>
+            <li><a href="#movie-quote-list">Movie Quotes</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Intro section -->
+    <section id="intro">
+      <div class="container">
+        <h1>
+
+        I like <a href="https://en.wikipedia.org/wiki/Lists_of_science_fiction_films">Sci-Fi movies</a>. Here are trailers for some of my favorite Sci-Fi movies.
+
+        </h1>
+      </div>
+    </section>
+
+    <!-- Movie section -->
+    <section id="movie-list">
+      <div class="container">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 movie-tile text-center" data-trailer-youtube-id="lyy7y0QOK-0" 
+data-toggle="modal" data-target="#trailer"
+data-title="Chappie"
+data-storyline="In the near future, crime is patrolled by a mechanized police force. When one police droid, Chappie, is stolen and given new programming, he becomes the first robot with the ability to think and feel for himself.">
+    <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTUyNTI4NTIwNl5BMl5BanBnXkFtZTgwMjQ4MTI0NDE@._V1_SY1000_CR0,0,674,1000_AL_.jpg" width="220" height="342">
+</div>
+<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 movie-tile text-center" data-trailer-youtube-id="8BfMivMDOBI" 
+data-toggle="modal" data-target="#trailer"
+data-title="Inception"
+data-storyline="A thief, who steals corporate secrets through use of dream-sharing technology, is given the inverse task of planting an idea into the mind of a CEO.">
+    <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SY1000_CR0,0,675,1000_AL_.jpg" width="220" height="342">
+</div>
+<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 movie-tile text-center" data-trailer-youtube-id="Lm8p5rlrSkY" 
+data-toggle="modal" data-target="#trailer"
+data-title="Interstellar"
+data-storyline="A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.">
+    <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjIxNTU4MzY4MF5BMl5BanBnXkFtZTgwMzM4ODI3MjE@._V1_SY1000_CR0,0,640,1000_AL_.jpg" width="220" height="342">
+</div>
+<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 movie-tile text-center" data-trailer-youtube-id="8-_9n5DtKOc" 
+data-toggle="modal" data-target="#trailer"
+data-title="WALL-E"
+data-storyline="In the distant future, a small waste-collecting robot inadvertently embarks on a space journey that will ultimately decide the fate of mankind.">
+    <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjExMTg5OTU0NF5BMl5BanBnXkFtZTcwMjMxMzMzMw@@._V1_SY1000_CR0,0,674,1000_AL_.jpg" width="220" height="342">
+</div>
+<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 movie-tile text-center" data-trailer-youtube-id="EoQuVnKhxaM" 
+data-toggle="modal" data-target="#trailer"
+data-title="Ex Machina"
+data-storyline="A young programmer is selected to participate in a ground-breaking experiment in synthetic intelligence by evaluating the human qualities of a breath-taking humanoid A.I.">
+    <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTUxNzc0OTIxMV5BMl5BanBnXkFtZTgwNDI3NzU2NDE@._V1_SY1000_CR0,0,674,1000_AL_.jpg" width="220" height="342">
+</div>
+<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 movie-tile text-center" data-trailer-youtube-id="ej3ioOneTy8" 
+data-toggle="modal" data-target="#trailer"
+data-title="The Martian"
+data-storyline="An astronaut becomes stranded on Mars after his team assume him dead, and must rely on his ingenuity to find a way to signal to Earth that he is alive.">
+    <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTc2MTQ3MDA1Nl5BMl5BanBnXkFtZTgwODA3OTI4NjE@._V1_SY1000_CR0,0,675,1000_AL_.jpg" width="220" height="342">
+</div>
+<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 movie-tile text-center" data-trailer-youtube-id="_19pRsZRiz4" 
+data-toggle="modal" data-target="#trailer"
+data-title="A.I. Artificial Intelligence"
+data-storyline="A highly advanced robotic boy longs to become 'real' so that he can regain the love of his human mother.">
+    <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNWU2NzEyMDYtM2MyOS00OGM3LWFkNzAtMzRiNzE2ZjU5ZTljXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SY1000_CR0,0,666,1000_AL_.jpg" width="220" height="342">
+</div>
+<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 movie-tile text-center" data-trailer-youtube-id="_KJHRF6RlTQ" 
+data-toggle="modal" data-target="#trailer"
+data-title="Gravity"
+data-storyline="Two astronauts work together to survive after an accident which leaves them alone in space.">
+    <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjE5MzYwMzYxMF5BMl5BanBnXkFtZTcwOTk4MTk0OQ@@._V1_SY1000_CR0,0,675,1000_AL_.jpg" width="220" height="342">
+</div>
+
+      </div>
+    </section>
+
+    <!-- Random movie quote section -->
+    <section id="movie-quote-list">
+      <div class="container">
+        <div class="jumbotron">
+          <h1>Random Movie Quotes</h1>
+          <p>Below are random movie quotes from <a href="https://market.mashape.com/andruxnet/random-famous-quotes">Random Famous Quotes</a> by andrux.</p>
+        </div>
+        <div class="col-xcol-sm-6 col-md-4 col-lg-3 movie-quote">
+    <h3>The Godfather</h3>
+    <p>"I'm going to make him an offer he can't refuse."</p>
+</div>
+<div class="col-xcol-sm-6 col-md-4 col-lg-3 movie-quote">
+    <h3>White Heat</h3>
+    <p>"Made it, Ma! Top of the world!"</p>
+</div>
+<div class="col-xcol-sm-6 col-md-4 col-lg-3 movie-quote">
+    <h3>The Terminator</h3>
+    <p>"I'll be back."</p>
+</div>
+<div class="col-xcol-sm-6 col-md-4 col-lg-3 movie-quote">
+    <h3>The Sixth Sense</h3>
+    <p>"I see dead people."</p>
+</div>
+<div class="col-xcol-sm-6 col-md-4 col-lg-3 movie-quote">
+    <h3>Psycho</h3>
+    <p>"A boy's best friend is his mother."</p>
+</div>
+
+      </div>
+    </section>
+  </body>
+</html>
